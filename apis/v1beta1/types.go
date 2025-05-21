@@ -146,7 +146,7 @@ type VirtualMachineCloneSpec struct {
 	// StoragePolicyName of the storage policy to use with this
 	// Virtual Machine
 	// +optional
-	StoragePolicyName string `json:"storagePolicyName,omitempty"`
+	StoragePolicyName string `json:"storagePolicyName"`
 
 	// ResourcePool is the name, inventory path, managed object reference or the managed
 	// object ID in which the virtual machine is created/located.
@@ -166,7 +166,7 @@ type VirtualMachineCloneSpec struct {
 	// Defaults to the eponymous property value in the template from which the
 	// virtual machine is cloned.
 	// +optional
-	NumCoresPerSocket int32 `json:"numCoresPerSocket,omitempty"`
+	NumCoresPerSocket int32 `json:"numCoresPerSocket"`
 	// MemoryMiB is the size of a virtual machine's memory, in MiB.
 	// Defaults to the eponymous property value in the template from which the
 	// virtual machine is cloned.
